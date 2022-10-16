@@ -1,0 +1,10 @@
+﻿{
+	"name": "RevampedWarbanner",
+	"version_number": "1.0.0",
+	"website_url": "https://github.com/alexander-mcdowell/RevampedWarbanner",
+	"description": "Forces the Warbanner item to spawn only on equipment usage and with halved radius.",
+	"dependencies": [
+		"bbepis-BepInExPack-5.4.2103",
+		"RiskofThunder-HookGenPatcher-1.2.3"
+	]
+}
