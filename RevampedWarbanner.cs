@@ -26,7 +26,7 @@ namespace RevampedWarbanner {
         public const string PluginGUID = PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "SolidwoodFailures";
         public const string PluginName = "RevampedWarbanner";
-        public const string PluginVersion = "1.0.1";
+        public const string PluginVersion = "1.0.2";
 
         private const string tooltip = "Drops a banner upon Equipment activation. Grants allies attack and movement speed.";
 
@@ -40,7 +40,7 @@ namespace RevampedWarbanner {
         public void Awake() {
             // Create config entries.
             initialRadiusConfig = Config.Bind<float>("Warbanner Stats", "Initial Radius", defaultInitialRadius, "The initial radius of a warbanner (stacks = 1). Must be positive, otherwise the default value (8.0 m) will be chosen.");
-            radiusIncConfig = Config.Bind<float>("Warbanner Stats", "Radius Increment", defaultRadiusInc, "Controls how quickly the warbanner radius grows with the number of warbanner stacks. Must be positive, otherwise the default value (4.0 m) will be chosen.");
+            radiusIncConfig = Config.Bind<float>("Warbanner Stats", "Radius Increment", defaultRadiusInc, "Controls how quickly the warbanner grows with the number of warbanner stacks. Must be positive, otherwise the default value (4.0 m) will be chosen.");
             float initialRadius = (initialRadiusConfig.Value <= 0) ? defaultInitialRadius : initialRadiusConfig.Value;
             float radiusInc = (radiusIncConfig.Value <= 0) ? defaultRadiusInc : radiusIncConfig.Value;
 
@@ -81,7 +81,7 @@ namespace RevampedWarbanner {
             {
                 orig(self);
                 // Check if the player has a warbanner.
-                if (self.characterBody.inventory.GetItemCount(ItemCatalog.itemDefs[182]) > 0)
+                if (self.characterBody.inventory.GetItemCount(RoR2Content.Items.WardOnLevel) > 0)
                 {
                     // Spawn a warbanner.
                     int itemCount = self.characterBody.inventory.GetItemCount(RoR2Content.Items.WardOnLevel);

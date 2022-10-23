@@ -1,6 +1,6 @@
 ﻿{
 	"name": "RevampedWarbanner",
-	"version_number": "1.0.1",
+	"version_number": "1.0.2",
 	"website_url": "https://github.com/alexander-mcdowell/RevampedWarbanner",
 	"description": "Forces the Warbanner item to spawn only on equipment usage and with halved radius.",
 	"dependencies": [
