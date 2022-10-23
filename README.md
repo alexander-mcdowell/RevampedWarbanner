@@ -13,3 +13,5 @@ There is a compatability issue with BetterUI's tooltips where it will always dis
 	- Added (partial) BetterUI compatability and configuration options for warbanner radius.
 - 1.0.2
 	- Fixed bug where Warbanners will spawn on equipment usage even if the player doesn't have a Warbanner... (sigh).
+- 1.0.3
+	- v1.0.2 appears to have fixed incompatability with TeammateRevival. The README has been edited to reflect this.
