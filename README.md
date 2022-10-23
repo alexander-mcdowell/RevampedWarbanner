@@ -13,3 +13,5 @@ In addition, the mod TeammateRevival appears to prevent summoning Warbanner usin
 	- Initial Release
 - 1.0.1
 	- Added (partial) BetterUI compatability and configuration options for warbanner radius.
+- 1.0.2
+	- Fixed bug where Warbanners will spawn on equipment usage even if the player doesn't have a Warbanner... (sigh).
