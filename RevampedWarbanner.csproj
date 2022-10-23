@@ -27,6 +27,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="BetterUI">
+      <HintPath>..\..\..\..\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\The Standard\BepInEx\plugins\XoXFaby-BetterUI\BetterUI.dll</HintPath>
+    </Reference>
     <Reference Include="Facepunch.Steamworks">
       <HintPath>libs\Facepunch.Steamworks.dll</HintPath>
       <Private>false</Private>
